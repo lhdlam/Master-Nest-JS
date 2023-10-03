@@ -1,0 +1,24 @@
+type ApiGrapqlSchema {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input CreateApiGrapqlSchemaInput {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input UpdateApiGrapqlSchemaInput {
+  id: Int!
+}
+
+type Query {
+  apiGrapqlSchema: [ApiGrapqlSchema]!
+  apiGrapqlSchema(id: Int!): ApiGrapqlSchema
+}
+
+type Mutation {
+  createApiGrapqlSchema(createApiGrapqlSchemaInput: CreateApiGrapqlSchemaInput!): ApiGrapqlSchema!
+  updateApiGrapqlSchema(updateApiGrapqlSchemaInput: UpdateApiGrapqlSchemaInput!): ApiGrapqlSchema!
+  removeApiGrapqlSchema(id: Int!): ApiGrapqlSchema
+}
